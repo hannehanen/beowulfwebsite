@@ -3,21 +3,37 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Init push of testing commits
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="topnav">
+        <a className="active" href="#start">Start</a>
+        <a href="#nyheter">Nyheter..</a>
+        <a href="#dokument">Dokument</a>
+        <a href="#om">Om</a>
+      </div>
+      <div id="outer-container">
+        <div id="sidebar">
+
+          <p className="text">
+          Något här.
+          </p>
+          
+          <p className="text">
+          Något där.
+          </p>
+        </div>
+        <div id="content">
+        <h1 className="text">Beowulf Rocks!</h1>
+        <p className="text">
+          Informationen kan stå här...
+         
+          </p>
+          <p className="text">
+          Endast en enkel sida för att påvisa något man kan göra..
+         
+          </p>
+    
+        </div>
+      </div>
     </div>
   );
 }
